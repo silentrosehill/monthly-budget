@@ -4,13 +4,13 @@ A small Mac app for keeping track of your month: income, fixed spending, bills, 
 
 It comes in two looks: **Liquid Glass**, with a see-through window, and **Classic**, a cork pinboard in an oak frame inspired by old Mac OS X.
 
-![Classic look, monthly budget](screenshots/classic-monthly.jpg)
-
 ![Liquid Glass look in dark mode](screenshots/glass-dark-monthly.jpg)
 
-| Daily spending, Classic | Daily spending, Liquid Glass (light) |
+![Classic look, monthly budget](screenshots/classic-monthly.jpg)
+
+| Daily spending, Liquid Glass (light) | Daily spending, Classic |
 | --- | --- |
-| ![Daily spending in the Classic look](screenshots/classic-daily.jpg) | ![Daily spending in Liquid Glass, light mode](screenshots/glass-light-daily.jpg) |
+| ![Daily spending in Liquid Glass, light mode](screenshots/glass-light-daily.jpg) | ![Daily spending in the Classic look](screenshots/classic-daily.jpg) |
 
 *The screenshots use a made-up budget (`screenshots/demo.json`).*
 
