@@ -1,0 +1,455 @@
+{
+ "carry": 140,
+ "carryOn": true,
+ "carryName": "Left from last month",
+ "historyOn": true,
+ "historyName": "History",
+ "sections": [
+  {
+   "id": "income",
+   "type": "income",
+   "name": "Income",
+   "lines": [
+    {
+     "name": "Salary",
+     "amount": 2300
+    },
+    {
+     "name": "Freelance",
+     "amount": 180
+    }
+   ]
+  },
+  {
+   "id": "bonus",
+   "type": "sub",
+   "name": "If bonus",
+   "lines": [
+    {
+     "name": "Year-end bonus",
+     "amount": 0
+    }
+   ],
+   "linkTo": "income",
+   "count": true,
+   "reset": true
+  },
+  {
+   "id": "spend",
+   "type": "spending",
+   "name": "Fixed spending",
+   "lines": [
+    {
+     "name": "Rent",
+     "amount": 780
+    },
+    {
+     "name": "Electricity",
+     "amount": 55
+    },
+    {
+     "name": "Car loan",
+     "amount": 210
+    },
+    {
+     "name": "Insurance",
+     "amount": 64
+    }
+   ]
+  },
+  {
+   "id": "billing",
+   "type": "sub",
+   "name": "Billing",
+   "lines": [
+    {
+     "name": "Internet",
+     "amount": 30
+    },
+    {
+     "name": "Phone",
+     "amount": 15
+    },
+    {
+     "name": "Streaming",
+     "amount": 13.99
+    },
+    {
+     "name": "Cloud storage",
+     "amount": 2.99
+    }
+   ],
+   "linkTo": "spend",
+   "count": true
+  },
+  {
+   "id": "paypal",
+   "type": "installments",
+   "name": "PayPal",
+   "lines": [
+    {
+     "name": "Headphones 4x",
+     "amount": 37.5,
+     "months": 2,
+     "day": 12
+    },
+    {
+     "name": "Desk chair 3x",
+     "amount": 59.9,
+     "months": 1,
+     "day": 20
+    }
+   ],
+   "linkTo": "spend",
+   "count": true
+  }
+ ],
+ "month": "2026-09",
+ "currency": "EUR",
+ "theme": "classic",
+ "mode": "auto",
+ "layout": null,
+ "history": [
+  {
+   "month": "2026-07",
+   "carry": 95,
+   "inc": 2480,
+   "out": 1366.37,
+   "left": 806.48,
+   "currency": "EUR",
+   "sections": [
+    {
+     "name": "Income",
+     "type": "income",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Salary",
+       "amount": 2300
+      },
+      {
+       "name": "Freelance",
+       "amount": 180
+      }
+     ]
+    },
+    {
+     "name": "If bonus",
+     "type": "sub",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Year-end bonus",
+       "amount": 0
+      }
+     ]
+    },
+    {
+     "name": "Fixed spending",
+     "type": "spending",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Rent",
+       "amount": 780
+      },
+      {
+       "name": "Electricity",
+       "amount": 55
+      },
+      {
+       "name": "Car loan",
+       "amount": 210
+      },
+      {
+       "name": "Insurance",
+       "amount": 64
+      }
+     ]
+    },
+    {
+     "name": "Billing",
+     "type": "sub",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Internet",
+       "amount": 30
+      },
+      {
+       "name": "Phone",
+       "amount": 15
+      },
+      {
+       "name": "Streaming",
+       "amount": 13.99
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 2.99
+      }
+     ]
+    },
+    {
+     "name": "PayPal",
+     "type": "installments",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Headphones 4x",
+       "amount": 37.5,
+       "months": 2,
+       "day": 12
+      },
+      {
+       "name": "Desk chair 3x",
+       "amount": 59.9,
+       "months": 1,
+       "day": 20
+      }
+     ]
+    }
+   ],
+   "daily": {
+    "total": 402.15,
+    "count": 21,
+    "byCat": [
+     {
+      "name": "Groceries",
+      "amount": 180.9675
+     },
+     {
+      "name": "Eating out",
+      "amount": 100.5375
+     },
+     {
+      "name": "Transport",
+      "amount": 60.32249999999999
+     },
+     {
+      "name": "Entertainment",
+      "amount": 60.32249999999999
+     }
+    ]
+   }
+  },
+  {
+   "month": "2026-08",
+   "carry": 806.48,
+   "inc": 2480,
+   "out": 1366.37,
+   "left": 140,
+   "currency": "EUR",
+   "sections": [
+    {
+     "name": "Income",
+     "type": "income",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Salary",
+       "amount": 2300
+      },
+      {
+       "name": "Freelance",
+       "amount": 180
+      }
+     ]
+    },
+    {
+     "name": "If bonus",
+     "type": "sub",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Year-end bonus",
+       "amount": 0
+      }
+     ]
+    },
+    {
+     "name": "Fixed spending",
+     "type": "spending",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Rent",
+       "amount": 780
+      },
+      {
+       "name": "Electricity",
+       "amount": 55
+      },
+      {
+       "name": "Car loan",
+       "amount": 210
+      },
+      {
+       "name": "Insurance",
+       "amount": 64
+      }
+     ]
+    },
+    {
+     "name": "Billing",
+     "type": "sub",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Internet",
+       "amount": 30
+      },
+      {
+       "name": "Phone",
+       "amount": 15
+      },
+      {
+       "name": "Streaming",
+       "amount": 13.99
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 2.99
+      }
+     ]
+    },
+    {
+     "name": "PayPal",
+     "type": "installments",
+     "counted": true,
+     "lines": [
+      {
+       "name": "Headphones 4x",
+       "amount": 37.5,
+       "months": 2,
+       "day": 12
+      },
+      {
+       "name": "Desk chair 3x",
+       "amount": 59.9,
+       "months": 1,
+       "day": 20
+      }
+     ]
+    }
+   ],
+   "daily": {
+    "total": 1780.11,
+    "count": 21,
+    "byCat": [
+     {
+      "name": "Groceries",
+      "amount": 801.0495
+     },
+     {
+      "name": "Eating out",
+      "amount": 445.0275
+     },
+     {
+      "name": "Transport",
+      "amount": 267.01649999999995
+     },
+     {
+      "name": "Entertainment",
+      "amount": 267.01649999999995
+     }
+    ]
+   }
+  }
+ ],
+ "undo": [],
+ "daily": [
+  {
+   "id": "d3Gro",
+   "name": "Groceries",
+   "amount": 42.8,
+   "cat": "food",
+   "method": "Card",
+   "date": "2026-09-03",
+   "month": "2026-09"
+  },
+  {
+   "id": "d4Cof",
+   "name": "Coffee",
+   "amount": 3.5,
+   "cat": "eatout",
+   "method": "Card",
+   "date": "2026-09-04",
+   "month": "2026-09"
+  },
+  {
+   "id": "d5Bus",
+   "name": "Bus pass",
+   "amount": 25,
+   "cat": "transport",
+   "method": "Card",
+   "date": "2026-09-05",
+   "month": "2026-09"
+  },
+  {
+   "id": "d12Cin",
+   "name": "Cinema",
+   "amount": 11,
+   "cat": "fun",
+   "method": "Cash",
+   "date": "2026-09-12",
+   "month": "2026-09"
+  },
+  {
+   "id": "d13Piz",
+   "name": "Pizza night",
+   "amount": 18.5,
+   "cat": "eatout",
+   "method": "Card",
+   "date": "2026-09-13",
+   "month": "2026-09"
+  },
+  {
+   "id": "d17Gro",
+   "name": "Groceries",
+   "amount": 56.2,
+   "cat": "food",
+   "method": "Card",
+   "date": "2026-09-17",
+   "month": "2026-09"
+  },
+  {
+   "id": "d20Vid",
+   "name": "Video game",
+   "amount": 19.99,
+   "cat": "games",
+   "method": "PayPal",
+   "date": "2026-09-20",
+   "month": "2026-09"
+  },
+  {
+   "id": "d22Pha",
+   "name": "Pharmacy",
+   "amount": 8.4,
+   "cat": "health",
+   "method": "Card",
+   "date": "2026-09-22",
+   "month": "2026-09"
+  },
+  {
+   "id": "d25Bir",
+   "name": "Birthday gift",
+   "amount": 30,
+   "cat": "gifts",
+   "method": "Card",
+   "date": "2026-09-25",
+   "month": "2026-09"
+  },
+  {
+   "id": "d28Gro",
+   "name": "Groceries",
+   "amount": 38.9,
+   "cat": "food",
+   "method": "Card",
+   "date": "2026-09-28",
+   "month": "2026-09"
+  }
+ ],
+ "tab": "monthly",
+ "updatedAt": 0
+}
