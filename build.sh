@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Build Monthly Budget.app and install it to ~/Applications
+# Build Monthly Budget.app and install it to /Applications
 set -e
 cd "$(dirname "$0")"
 python3 build.py
@@ -37,6 +37,6 @@ lipo -create -output "$C/MacOS/MonthlyBudget" build/MonthlyBudget-arm64 build/Mo
 codesign --force --deep -s - "$APP"
 pkill -f "MacOS/MonthlyBudget" || true
 sleep 1
-mkdir -p ~/Applications && rm -rf ~/Applications/"Monthly Budget.app" && cp -R "$APP" ~/Applications/
-open ~/Applications/"Monthly Budget.app"
-echo "Installed ~/Applications/Monthly Budget.app"
+rm -rf "/Applications/Monthly Budget.app" && cp -R "$APP" /Applications/
+open "/Applications/Monthly Budget.app"
+echo "Installed /Applications/Monthly Budget.app"
