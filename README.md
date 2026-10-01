@@ -32,7 +32,7 @@ It comes in two looks: **Liquid Glass**, with a see-through window, and **Classi
 
 ## Download
 
-Get **Monthly-Budget-1.0.zip** from the [latest release](https://github.com/silentrosehill/monthly-budget/releases/latest), unzip it and drag **Monthly Budget** into your Applications folder. It runs on macOS 26 or newer, on Apple silicon and Intel Macs.
+Get the **Monthly-Budget** zip from the [latest release](https://github.com/silentrosehill/monthly-budget/releases/latest), unzip it and drag **Monthly Budget** into your Applications folder. It runs on macOS 26 or newer, on Apple silicon and Intel Macs.
 
 The app isn't signed with a paid Apple developer certificate, so the first time you open it macOS will block it. To allow it, open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to Monthly Budget. You only need to do this once.
 
