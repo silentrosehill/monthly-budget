@@ -1,5 +1,6 @@
 # Monthly Budget
 
+HIIII, AGAIN, similar to my other software, its a personal software that i share, so OFC its vibecoded asf, enjoy for anyone who can find it useful <3, i take no credit for the code ofc! 
 A small Mac app for keeping track of your month: income, fixed spending, bills, installment payments and day-to-day purchases, with what's left always up to date.
 
 It comes in two looks: **Liquid Glass**, with a see-through window, and **Classic**, a cork pinboard in an oak frame inspired by old Mac OS X.
