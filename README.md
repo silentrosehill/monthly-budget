@@ -29,15 +29,21 @@ It comes in two looks: **Liquid Glass**, with a see-through window, and **Classi
 - **Light, dark or follow the system**, just for this app.
 - **Private by design**: no account and no internet connection. Everything is saved on your Mac in `~/Library/Application Support/Monthly Budget/`, with automatic daily backups of the last 14 days.
 
+## Download
+
+Get **Monthly-Budget-1.0.zip** from the [latest release](https://github.com/silentrosehill/monthly-budget/releases/latest), unzip it and drag **Monthly Budget** into your Applications folder. It runs on macOS 26 or newer, on Apple silicon and Intel Macs.
+
+The app isn't signed with a paid Apple developer certificate, so the first time you open it macOS will block it. To allow it, open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to Monthly Budget. You only need to do this once.
+
 ## Build and install
 
-Requirements: macOS 26 or newer (for the Liquid Glass window) and Apple's Command Line Tools (`xcode-select --install`).
+Requirements: macOS 26 or newer (for the Liquid Glass window) and Apple's Command Line Tools (`xcode-select --install`). The build makes one app for both Apple silicon and Intel.
 
 ```bash
 ./build.sh
 ```
 
-This builds `Monthly Budget.app`, installs it in `~/Applications` and opens it. The app isn't signed with a developer certificate, so the first time macOS may ask you to confirm: right-click the app, choose **Open**, then **Open**.
+This builds `Monthly Budget.app`, installs it in `~/Applications` and opens it.
 
 ## Project layout
 
