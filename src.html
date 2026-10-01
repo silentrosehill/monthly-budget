@@ -1450,10 +1450,19 @@ function computeCols(n) {
   const shortest = allowed => allowed.reduce((best, c) => heights[c] < heights[best] ? c : best, allowed[0]);
   const all = [...Array(n).keys()];
   const split = Math.max(1, Math.floor(n / 2));
-  for (const id of orderedIds()) {
+  const Ly = state.layout, ids = orderedIds();
+  // Columns your arrangement actually uses, left to right. When the window gets narrower, empty columns go first,
+  // so your cards keep their places; cards only merge once there are more filled columns than fit.
+  const used = Ly && Ly.cols ? [...new Set(ids.map(id => Ly.cols[id]).filter(v => v != null))].sort((a, b) => a - b) : [];
+  const savedCol = id => {
+    const saved = Ly.cols[id];
+    if (n >= Ly.n) return Math.min(saved, n - 1);
+    const rank = used.indexOf(saved);
+    return used.length <= n ? rank : Math.min(n - 1, Math.floor(rank * n / used.length));
+  };
+  for (const id of ids) {
     let c;
-    const Ly = state.layout;
-    if (Ly && Ly.cols && Ly.cols[id] != null) c = Ly.n === n ? Math.min(Ly.cols[id], n - 1) : Math.min(n - 1, Math.floor(Ly.cols[id] * n / Ly.n));
+    if (Ly && Ly.cols && Ly.cols[id] != null) c = savedCol(id);
     else if (Ly) c = shortest(all);
     else { const g = groupOf(id); c = shortest(n === 1 || g === "any" ? all : g === "in" ? all.slice(0, split) : all.slice(split)); }
     cols[c].push(id);
