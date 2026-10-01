@@ -29,7 +29,11 @@ for s in 16 32 128 256 512; do
   sips -z $((s*2)) $((s*2)) icon/wallet1024.png --out build/AppIcon.iconset/icon_${s}x${s}@2x.png >/dev/null
 done
 iconutil -c icns build/AppIcon.iconset -o "$C/Resources/AppIcon.icns"
-swiftc -O -o "$C/MacOS/MonthlyBudget" main.swift -framework Cocoa -framework WebKit
+# One app for Apple silicon and Intel, running on macOS 26 and later
+for arch in arm64 x86_64; do
+  swiftc -O -target $arch-apple-macos26.0 -o build/MonthlyBudget-$arch main.swift -framework Cocoa -framework WebKit
+done
+lipo -create -output "$C/MacOS/MonthlyBudget" build/MonthlyBudget-arm64 build/MonthlyBudget-x86_64
 codesign --force --deep -s - "$APP"
 pkill -f "MacOS/MonthlyBudget" || true
 sleep 1

@@ -8,3 +8,4 @@ budget.html
 # downloaded font stylesheet (fonts/fonts.css is the one used)
 fonts/google.css
 .DS_Store
+dist/
